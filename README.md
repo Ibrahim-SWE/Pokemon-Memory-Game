@@ -2,11 +2,11 @@
 
 This is a simple memory card game built with React and Tailwind CSS.
 
-<a href='https://pokemon-memory-game-510.pages.dev' target="blank">Website Link<a/>
+<a href='https://pokemon-memory-game.ibrahim-swe.workers.dev/' target="blank">Website Link<a/>
 
 
 ## Features to Add:
-- Deploy website using GitHub Actions
+- ~~Deploy website using Cloudflare Workers~~
 - Notification after losing a game
 - Improved design and UI
 - Different difficulty modes
