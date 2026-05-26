@@ -9,6 +9,7 @@
 
 * {
   font-family: pokemonFont;
+  letter-spacing: 0.15em
 }
 
 @theme {
@@ -23,6 +24,7 @@ body {
 }
 .titleContainer {
   text-shadow: 0 0 5px var(--color-secondary);
+  padding-top: 15px;
 }
 
 .currentScore {
@@ -58,4 +60,31 @@ body {
 .card-image {
   width: 100%;
   height: auto;
+}
+
+.gameOverOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.gameOverModal {
+  background-color: rgb(28, 28, 77);
+  border: 2px solid rgb(214, 180, 29);
+  padding: 2rem;
+  text-align: center;
+  color: rgb(239, 248, 106);
+}
+
+.gameOverModal button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
