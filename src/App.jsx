@@ -75,18 +75,16 @@ function App() {
       <div
         className={`mainContainer min-h-screen flex flex-col  ${responsiveTextSizes} `}
       >
-        <div className="titleContainer bg-background p-2 pb-3 w-[100%] text-center h-fit">
-          <p className=" text-black font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-            Pokemon Memory Card Game
-          </p>
+        <div className="titleContainer bg-background px-2 py-1 sm:py-2 sm:pb-3 w-full text-center">
+          <p className=" text-black font-bold">Pokemon Memory Card Game</p>
         </div>
-        <div className="infoContainer bg-background pr-[10%] pl-[10%] pb-4">
+        <div className="infoContainer bg-background px-[5%] sm:px-[10%] py-1 sm:py-2 sm:pb-4">
           <div className="gameDescription">
             <div className="descriptionText text-center">
               Try to click each Pokemon only once!
             </div>
           </div>
-          <div className="scoresContainer mt-2 mb-2 flex flex-row justify-around">
+          <div className="scoresContainer mt-2 mb-2 flex flex-row justify-around gap-4">
             <div className="currentScore text-primary">
               Current Score: {score}
             </div>
@@ -94,14 +92,14 @@ function App() {
           </div>
         </div>
         <div className="gameContainerBG flex flex-col items-center justify-center ">
-          <div className="gameContainer grid grid-cols-3 md:grid-cols-4 gap-3 p-3">
+          <div className="gameContainer grid grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3 p-2 sm:p-4">
             <CardsGrid
               shuffledData={shuffledData}
               onCardClick={handleCardClick}
             ></CardsGrid>
           </div>
         </div>
-        <div className="footer mt-auto py-4 text-center">
+        <div className="footer mt-auto py-1 sm:py-4 text-center">
           <a
             href="https://github.com/Ibrahim-SWE"
             target="_blank"

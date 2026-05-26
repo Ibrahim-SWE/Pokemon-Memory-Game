@@ -27,6 +27,10 @@ body {
   padding-top: 15px;
 }
 
+.titleContainer p {
+  font-size: clamp(1.2rem, 4vw, 3rem);
+}
+
 .currentScore {
   text-shadow: 0 0 5px white;
 }
@@ -46,15 +50,9 @@ body {
   background-color: rgba(255, 6, 6, 0.589);
   color: rgb(239, 248, 106);
 
-  padding: 4px;
-  margin: 6px;
-
   cursor: pointer;
-
-  aspect-ratio: 0.7 / 1;
-  height: auto;
-
   border: 2px solid rgb(214, 180, 29);
+  min-height: 0; 
 }
 
 .card-image {
